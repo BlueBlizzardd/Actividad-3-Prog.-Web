@@ -1,0 +1,59 @@
+.form-container {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+    border-radius: 7px;
+    padding: 2rem;
+    margin: auto;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.form-element>label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.form-element--post {
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.form-element--buttons {
+    display:flex;
+    justify-content: space-around;
+    margin: 1.25rem auto;
+}
+
+.form-element--buttons>button {
+    font-weight: bold;
+    background-color: cadetblue;
+    padding: 0.25rem 0.5rem;
+    border: 0;
+}
+
+.directory {
+    text-decoration: none;
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+    padding: 0.2em;
+    margin: auto 1em;
+}
+
+.directory-item {
+    text-decoration: none;
+    text-align: center;
+    background-color: aquamarine;
+    color: black;
+    padding: 0.2em;
+    margin: auto 1em;
+}

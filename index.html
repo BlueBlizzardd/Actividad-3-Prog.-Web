@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="filehandler.php" method="post" name="currentNote">
+            <div class="form-element">
+                <label for="filename">Name</label>
+                <input type="text" name="filename" id="filename" class="form-element--post">
+            </div>
+            <div class="form-element">
+                <label for="fileContents">Contents</label>
+                <textarea name="fileContents" id="fileContents" class="form-element--post" cols="30"
+                    rows="10"></textarea>
+            </div>
+            <div class="form-element">
+                <label for="folder">Folder</label>
+                <input type="text" name="folder" id="folder" class="form-control--post">
+            </div>
+            <div class="form-element--buttons">
+                <button type="submit" name="action" value="open">Open File</button>
+                <button type="submit" name="action" value="save">Save</button>
+                <button type="submit" name="action" value="delete">Delete</button>
+                <button type="submit" name="action" value="create_folder">Create Folder</button>
+                <button type="submit" name="action" value="create_file">Create File</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
